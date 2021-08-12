@@ -43,6 +43,7 @@ function connect(callback) {
     connectString,
     options,
     function(err) {
+      console.log(connectString)
       if (err) {
         yapi.commons.log(err + ', mongodb Authentication failed', 'error');
       }
